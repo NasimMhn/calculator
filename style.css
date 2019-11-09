@@ -85,6 +85,7 @@ button:hover {
   }
 
 .number-btn {
+    background-color: whitesmoke;
     justify-self: center;
     height: 60px;
     width: 60px;
