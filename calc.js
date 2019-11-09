@@ -7,7 +7,7 @@ const displayClick = (itself) => {
         displayBox.innerText = ""
     }
 
-    if (displayBox.innerText.length == 13) {
+    if (displayBox.innerText.length >= 13) {
         return
     }
 
@@ -39,8 +39,9 @@ const displayResult = () => {
     string = string.replace(/×/g, '*')
     string = string.replace(/÷/g, '/')
 
-    let result = eval(string)
-    displayBox.innerText = result
+    let result = eval(string).toPrecision();
+    result = result.slice(0, 13)
+    displayBox.innerText = String(result)
 }
 
 var str1 = "2+";
