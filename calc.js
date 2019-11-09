@@ -7,6 +7,10 @@ const displayClick = (itself) => {
         displayBox.innerText = ""
     }
 
+    if (displayBox.innerText.length == 13) {
+        return
+    }
+
     // if diplay box ends with +, -,  ×, or ÷
     let displayText = displayBox.innerText
     if (displayText.endsWith("+") || displayText.endsWith("-") || displayText.endsWith("×") || displayText.endsWith("÷")) {
@@ -16,7 +20,7 @@ const displayClick = (itself) => {
 
         } else {
             // if the display box ends with +, -,  ×, or ÷ then replace the last character with pressed button
-            displayText = displayText.slice(0, -1) + itself.innerText
+            displayBox.innerText = displayText.slice(0, -1) + itself.innerText
             return
         }
 
