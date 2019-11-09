@@ -3,13 +3,51 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Calculator by Nasim</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        header
+    </header>
+
+    <div class="container">
+
+        <div id="calculator">
+            <div id="display-box">
+            </div>
+            <div class="buttons">
+                <div class="numbers">
+                    <button class="number-btn" onclick="displayClick(this)">1</button>
+                    <button class="number-btn" onclick="displayClick(this)">2</button>
+                    <button class="number-btn" onclick="displayClick(this)">3</button>
+                    <button class="number-btn" onclick="displayClick(this)">4</button>
+                    <button class="number-btn" onclick="displayClick(this)">5</button>
+                    <button class="number-btn" onclick="displayClick(this)">6</button>
+                    <button class="number-btn" onclick="displayClick(this)">7</button>
+                    <button class="number-btn" onclick="displayClick(this)">8</button>
+                    <button class="number-btn" onclick="displayClick(this)">9</button>
+                    <button class="number-btn big-btn" onclick="displayClick(this)">0</button>
+                    <button class="number-btn" onclick="displayClick(this)">.</button>
+                </div>
+                <div class="operations">
+                    <button class="operation-btn" onclick="displayClick(this)">+</button>
+                    <button class="operation-btn" onclick="displayClick(this)">-</button>
+                    <button class="operation-btn" onclick="displayClick(this)">&times;</button>
+                    <button class="operation-btn" onclick="displayClick(this)">&divide;</button>
+                    <button class="operation-btn big-btn" onclick="displayClear()">AC</button>
+                    <button class="operation-btn big-btn" onclick="displayResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        footer
+    </footer>
 
 
     <script src="calc.js" async defer></script>
