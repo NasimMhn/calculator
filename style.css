@@ -39,7 +39,7 @@ header, footer {
     display: inline-block;
     background-color: rgb(50, 49, 49);
     border-radius: 25px;
-    padding:40px;
+    padding:30px;
     -webkit-box-shadow: 35px 11px 41px 23px rgba(0,0,0,0.75);
     -moz-box-shadow: 35px 11px 41px 23px rgba(0,0,0,0.75);
     box-shadow: 35px 11px 41px 23px rgba(0,0,0,0.75);
@@ -76,6 +76,10 @@ header, footer {
 }
 button {
     font-family: 'Barlow', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
 }
 button:hover {
     filter: brightness(55%);
