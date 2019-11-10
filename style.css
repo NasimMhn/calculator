@@ -4,14 +4,11 @@ body {
     background-color: #367761;
     background-image: url("assets/background.jpg");
     background-repeat: no-repeat;
-
     height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
-
 }
 
 *:focus {
@@ -27,7 +24,7 @@ body {
     align-items: center;
 }
 
-header, footer {
+footer {
     background-color: #367761c9;
     height:70px;
     text-align: center;
@@ -36,10 +33,11 @@ header, footer {
 }
 
 #calculator {
+    min-width: 325px;
     display: inline-block;
     background-color: rgb(50, 49, 49);
     border-radius: 25px;
-    padding:30px;
+    padding:20px 30px;
     -webkit-box-shadow: 35px 11px 41px 23px rgba(0,0,0,0.75);
     -moz-box-shadow: 35px 11px 41px 23px rgba(0,0,0,0.75);
     box-shadow: 35px 11px 41px 23px rgba(0,0,0,0.75);
@@ -48,22 +46,21 @@ header, footer {
 }
 
 #display-box {
-    border-radius: 15px;
+    height: 65px;
+    line-height: 65px;
     background-color: black;
     color:white;
-    height: 70px;
-    margin-bottom: 15px;
-    line-height: 70px;
-    padding: 0px 20px;
+    border-radius: 15px;
     font-size: 42px;
     text-align: right;
+    padding: 0px 20px;
+    margin-bottom: 15px;
     -moz-box-shadow: inset 0 0 5px #8e8e8e;
     -webkit-box-shadow: inset 0 0 5px #8e8e8e;
     box-shadow: inset 0 0 5px #8e8e8e;
-  
 }  
 
-.buttons { 
+.buttons-container { 
     display: flex;
     flex-direction: row;
 }
@@ -73,19 +70,15 @@ header, footer {
     grid-template-columns: repeat(3, min-content);
     column-gap: 5px;
     row-gap: 5px;
-    justify-items: center;
-    align-items: center;
 }
 
 .operations-container {
-    margin-left: 10px;
     display: grid;
     grid-template-columns: repeat(2, min-content);
     grid-template-rows: repeat(4, 1fr);
     column-gap: 5px;
     row-gap: 5px;
-    justify-items: center;
-    align-items: center;
+    margin-left: 10px;
 }
 
 button {
@@ -93,7 +86,6 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    text-align: center;
 }
 
 button:hover {
@@ -101,11 +93,12 @@ button:hover {
 }
 
 .number-btn, .operation-btn {
-    justify-self: center;
     height: 60px;
     width: 60px;
     border-radius: 50%;
     font-size: 25px;
+    justify-self: center;
+    align-self: center;
 } 
 
 .number-btn {
