@@ -1,10 +1,10 @@
 
 body {
+    min-height: 100vh;
     font-family: 'Barlow', sans-serif;
     background-color: #367761;
     background-image: url("assets/background.jpg");
     background-repeat: no-repeat;
-    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 footer {
@@ -30,6 +31,9 @@ footer {
     text-align: center;
     color: whitesmoke;
     font-size: 20px;
+    position: relative;
+    bottom: 0px;
+
 }
 
 #calculator {
