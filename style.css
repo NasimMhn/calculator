@@ -68,25 +68,39 @@ header, footer {
     flex-direction: row;
 }
 
-.numbers {
+.numbers-container {
     display: grid;
     grid-template-columns: repeat(3, min-content);
     column-gap: 5px;
     row-gap: 5px;
+    justify-items: center;
+    align-items: center;
 }
+
+.operations-container {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
 button {
     font-family: 'Barlow', sans-serif;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
+    text-align: center;
 }
+
 button:hover {
     filter: brightness(55%);
-  }
+}
 
-.number-btn {
-    background-color: whitesmoke;
+.number-btn, .operation-btn {
     justify-self: center;
     height: 60px;
     width: 60px;
@@ -94,13 +108,12 @@ button:hover {
     font-size: 25px;
 } 
 
+.number-btn {
+    background-color: whitesmoke;
+} 
+
 .operation-btn {
     background-color:goldenrod;
-    justify-self: center;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    font-size: 25px;
 } 
 
 .big-btn {
@@ -108,16 +121,8 @@ button:hover {
     grid-column-end: 3;
     width: 120px;
     border-radius: 50px;
-
 }
 
 
-.operations {
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, min-content);
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-}
+
 
